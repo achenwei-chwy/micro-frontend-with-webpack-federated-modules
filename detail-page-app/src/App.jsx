@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
+import Detail from "./Detail";
 
-const App = () => <div>Hi there, I'm React from Webpack 5.</div>;
+const App = () => <div>DETAIL: <Detail/></div>;
 
 ReactDOM.render(<App />, document.getElementById("app"));

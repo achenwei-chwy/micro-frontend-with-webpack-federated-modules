@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   output: {
-    publicPath: "http://localhost:8080/",
+    publicPath: "http://localhost:8082/",
   },
 
   resolve: {
@@ -11,7 +11,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 8080,
+    port: 8082,
   },
 
   module: {
@@ -32,10 +32,12 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "starter",
-      library: { type: "var", name: "starter" },
+      name: "header-app",
+      library: { type: "var", name: "header-app" },
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        "detail": "detail"
+      },
       exposes: {},
       shared: require("./package.json").dependencies,
     }),
