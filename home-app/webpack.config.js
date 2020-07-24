@@ -32,10 +32,13 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "home-app",
-      library: { type: "var", name: "home-app" },
+      name: "home",
+      library: { type: "var", name: "home" },
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        "detail": "detail",
+        "header": "header"
+      },
       exposes: {},
       shared: require("./package.json").dependencies,
     }),
