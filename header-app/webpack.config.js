@@ -39,7 +39,7 @@ module.exports = {
         "detail": "detail"
       },
       exposes: {
-        './Header': "./src/Header"
+        './HeaderCustom': "./src/HeaderCustom"
       },
       shared: require("./package.json").dependencies,
     }),

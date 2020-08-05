@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import "./index.css";
-import Header from "./Header";
+import HeaderCustom from "./HeaderCustom";
 
-export default App = () => <div>HEADER APP: <Header/></div>;
+
+const App = () => <div>HEADER APP: <HeaderCustom/></div>;
 
 ReactDOM.render(<App />, document.getElementById("app"));

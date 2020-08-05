@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import DetailApp from 'detail/Detail';
-import HeaderApp from 'header/Header';
+import HeaderApp from 'header/HeaderCustom';
 const Home = () => <div>
-
+  <h1 style={{backgroundColor: 'CornflowerBlue'}}>Home</h1>
   HOME here With Other Modules below:
   <br />
-  <DetailApp/>
+  <DetailApp colorName="Coral"/>
   <br />
   <HeaderApp/>
   <br />
