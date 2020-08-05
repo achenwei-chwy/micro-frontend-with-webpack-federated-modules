@@ -34,7 +34,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "header",
       library: { type: "var", name: "header" },
-      filename: "remoteEntry.js",
+      filename: "header-app-entry.js",
       remotes: {
         "detail": "detail"
       },

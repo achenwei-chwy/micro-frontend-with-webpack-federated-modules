@@ -34,7 +34,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "detail",
       library: { type: "var", name: "detail" },
-      filename: "remoteEntry.js",
+      filename: "detail-app-entry.js",
       remotes: {},
       exposes: {
         './Detail': "./src/Detail",
